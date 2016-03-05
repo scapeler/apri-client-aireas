@@ -1,0 +1,388 @@
+{
+  "templates": [
+    {
+      "name": "template_api-ui",
+      "blocks": [
+        {
+          "block": "div",
+          "className": "",
+          "blocks": [
+            {
+              "block": "div",
+			  "blockClass": "apri-view-header",
+              "text": "OpenIoD API userinterface "
+            }
+          ]
+        },
+        {
+          "block": "div",
+          "blockClass": "apri-view-block",
+          "shortId": "apri-api-container",
+          "blocks": [
+            {
+              "block": "div",
+			  "blockClass": "apri-view-header",
+              "shortId": "apri-api-header",
+              "blocks": [
+                {
+                  "block": "div",
+                  "shortId": "apri-api-header-title-container",
+                  "blocks": [
+                    {
+                      "block": "div",
+                      "shortId": "apri-api-header-title",
+                      "text": "{{titleDescription}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "block": "div",
+			  "blockClass": "apri-view-body",
+              "shortId": "apri-api-body",
+               "blocks": [
+                {
+                  "block": "formComponent",
+                  "blockClass": "view-field url",
+                  "mode": "edit",
+                  "type": "textarea",
+                  "formClass": "yiv-required",
+                  "formStyle": "",
+                  "fieldName": "viewFieldUrl",
+                  "placeholder": "API url",
+                  "labelText": "URL:"
+                },
+                {
+                  "block": "formComponent",
+                  "blockClass": "apri-view-field server-protocol",
+                  "mode": "edit",
+                  "type": "text",
+                  "formClass": "yiv-required",
+                  "formStyle": "",
+                  "fieldName": "viewFieldServerProtocol",
+                  "placeholder": "API server protocol",
+                  "labelText": "Protocol:"
+                },
+                {
+                  "block": "formComponent",
+                  "blockClass": "apri-view-field server",
+                  "mode": "edit",
+                  "type": "text",
+                  "formClass": "yiv-required",
+                  "formStyle": "",
+                  "fieldName": "viewFieldServer",
+                  "placeholder": "API server",
+                  "labelText": "Server:"
+                },
+                {
+                  "block": "formComponent",
+                  "blockClass": "apri-view-field server-port",
+                  "mode": "edit",
+                  "type": "text",
+                  "formClass": "yiv-required",
+                  "formStyle": "",
+                  "fieldName": "viewFieldServerPort",
+                  "placeholder": "API server port",
+                  "labelText": "Port:"
+                },
+                {
+                  "block": "formComponent",
+                  "blockClass": "apri-view-field url-path",
+                  "mode": "edit",
+                  "type": "text",
+                  "formClass": "yiv-required",
+                  "formStyle": "",
+                  "fieldName": "viewFieldUrlPath",
+                  "placeholder": "API url path",
+                  "labelText": "Path:"
+                },
+                {
+                  "block": "formComponent",
+                  "blockClass": "apri-view-field url-parameters",
+                  "mode": "edit",
+                  "type": "text",
+                  "formClass": "yiv-required",
+                  "formStyle": "",
+                  "fieldName": "viewFieldUrlParameters",
+                  "placeholder": "API url parameters",
+                  "labelText": "Parameters:"
+                },
+                {
+                  "block": "formComponent",
+                  "blockClass": "apri-view-field url-parameter-service",
+                  "mode": "edit",
+                  "type": "text",
+                  "formClass": "yiv-required",
+                  "formStyle": "",
+                  "fieldName": "viewFieldUrlParameterService",
+                  "placeholder": "API SERVICE",
+                  "labelText": "SERVICE:"
+                },
+                {
+                  "block": "formComponent",
+                  "blockClass": "apri-view-field url-parameter-service-version",
+                  "mode": "edit",
+                  "type": "text",
+                  "formClass": "yiv-required",
+                  "formStyle": "",
+                  "fieldName": "viewFieldUrlParameterServiceVersion",
+                  "placeholder": "API SERVICE VERSION",
+                  "labelText": "VERSION:"
+                },
+                {
+                  "block": "formComponent",
+                  "blockClass": "apri-view-field url-parameter-request",
+                  "mode": "edit",
+                  "type": "text",
+                  "formClass": "yiv-required",
+                  "formStyle": "",
+                  "fieldName": "viewFieldUrlParameterRequest",
+                  "placeholder": "API REQUEST",
+                  "labelText": "REQUEST:"
+                },
+                {
+                  "block": "formComponent",
+                  "blockClass": "apri-view-field url-parameter-format",
+                  "mode": "edit",
+                  "type": "text",
+                  "formClass": "yiv-required",
+                  "formStyle": "",
+                  "fieldName": "viewFieldUrlParameterFormat",
+                  "placeholder": "API Format",
+                  "labelText": "Format:"
+                },
+        {
+          "block": "div",
+          "blockClass": "apri-view-field-parameter-block apri-view-list",
+          "blocks": [
+		       	{
+              		"block": "div",
+			  		"blockClass": "apri-view-list-item apri-view-field-parameter",
+               		"blocks": [
+                		{
+                  			"block": "formComponent",
+                  			"blockClass": "apri-view-field url-parameter-key",
+                  			"mode": "edit",
+                  			"type": "text",
+                  			"formClass": "yiv-required",
+                  			"formStyle": "",
+                  			"fieldName": "viewFieldUrlParameterKey",
+                  			"placeholder": "API url parameter key",
+                  			"labelText": "Parameter:"
+                		},
+                		{
+                  			"block": "formComponent",
+                  			"blockClass": "apri-view-field url-parameter-value",
+                  			"mode": "edit",
+                  			"type": "text",
+                  			"formClass": "yiv-required",
+                  			"formStyle": "",
+                  			"fieldName": "viewFieldUrlParameterValue",
+                  			"placeholder": "API url parameter value",
+                  			"labelText": ":"
+                		}
+					]
+					
+				},
+		       	{
+              		"block": "div",
+			  		"blockClass": "apri-view-list-item apri-view-field-parameter",
+               		"blocks": [
+                		{
+                  			"block": "formComponent",
+                  			"blockClass": "apri-view-field url-parameter-key",
+                  			"mode": "edit",
+                  			"type": "text",
+                  			"formClass": "yiv-required",
+                  			"formStyle": "",
+                  			"fieldName": "viewFieldUrlParameterKey",
+                  			"placeholder": "API url parameter key",
+                  			"labelText": "Parameter:"
+                		},
+                		{
+                  			"block": "formComponent",
+                  			"blockClass": "apri-view-field url-parameter-value",
+                  			"mode": "edit",
+                  			"type": "text",
+                  			"formClass": "yiv-required",
+                  			"formStyle": "",
+                  			"fieldName": "viewFieldUrlParameterValue",
+                  			"placeholder": "API url parameter value",
+                  			"labelText": ":"
+                		}
+					]
+					
+				},
+		       	{
+              		"block": "div",
+			  		"blockClass": "apri-view-list-item apri-view-field-parameter",
+               		"blocks": [
+                		{
+                  			"block": "formComponent",
+                  			"blockClass": "apri-view-field url-parameter-key",
+                  			"mode": "edit",
+                  			"type": "text",
+                  			"formClass": "yiv-required",
+                  			"formStyle": "",
+                  			"fieldName": "viewFieldUrlParameterKey",
+                  			"placeholder": "API url parameter key",
+                  			"labelText": "Parameter:"
+                		},
+                		{
+                  			"block": "formComponent",
+                  			"blockClass": "apri-view-field url-parameter-value",
+                  			"mode": "edit",
+                  			"type": "text",
+                  			"formClass": "yiv-required",
+                  			"formStyle": "",
+                  			"fieldName": "viewFieldUrlParameterValue",
+                  			"placeholder": "API url parameter value",
+                  			"labelText": ":"
+                		}
+					]
+					
+				},
+		       	{
+              		"block": "div",
+			  		"blockClass": "apri-view-list-item apri-view-field-parameter",
+               		"blocks": [
+                		{
+                  			"block": "formComponent",
+                  			"blockClass": "apri-view-field url-parameter-key",
+                  			"mode": "edit",
+                  			"type": "text",
+                  			"formClass": "yiv-required",
+                  			"formStyle": "",
+                  			"fieldName": "viewFieldUrlParameterKey",
+                  			"placeholder": "API url parameter key",
+                  			"labelText": "Parameter:"
+                		},
+                		{
+                  			"block": "formComponent",
+                  			"blockClass": "apri-view-field url-parameter-value",
+                  			"mode": "edit",
+                  			"type": "text",
+                  			"formClass": "yiv-required",
+                  			"formStyle": "",
+                  			"fieldName": "viewFieldUrlParameterValue",
+                  			"placeholder": "API url parameter value",
+                  			"labelText": ":"
+                		}
+					]
+					
+				},
+		       	{
+              		"block": "div",
+			  		"blockClass": "apri-view-list-item apri-view-field-parameter",
+               		"blocks": [
+                		{
+                  			"block": "formComponent",
+                  			"blockClass": "apri-view-field url-parameter-key",
+                  			"mode": "edit",
+                  			"type": "text",
+                  			"formClass": "yiv-required",
+                  			"formStyle": "",
+                  			"fieldName": "viewFieldUrlParameterKey",
+                  			"placeholder": "API url parameter key",
+                  			"labelText": "Parameter:"
+                		},
+                		{
+                  			"block": "formComponent",
+                  			"blockClass": "apri-view-field url-parameter-value",
+                  			"mode": "edit",
+                  			"type": "text",
+                  			"formClass": "yiv-required",
+                  			"formStyle": "",
+                  			"fieldName": "viewFieldUrlParameterValue",
+                  			"placeholder": "API url parameter value",
+                  			"labelText": ":"
+                		}
+					]
+					
+				},
+		       	{
+              		"block": "div",
+			  		"blockClass": "apri-view-list-item apri-view-field-parameter",
+               		"blocks": [
+                		{
+                  			"block": "formComponent",
+                  			"blockClass": "apri-view-field url-parameter-key",
+                  			"mode": "edit",
+                  			"type": "text",
+                  			"formClass": "yiv-required",
+                  			"formStyle": "",
+                  			"fieldName": "viewFieldUrlParameterKey",
+                  			"placeholder": "API url parameter key",
+                  			"labelText": "Parameter:"
+                		},
+                		{
+                  			"block": "formComponent",
+                  			"blockClass": "apri-view-field url-parameter-value",
+                  			"mode": "edit",
+                  			"type": "text",
+                  			"formClass": "yiv-required",
+                  			"formStyle": "",
+                  			"fieldName": "viewFieldUrlParameterValue",
+                  			"placeholder": "API url parameter value",
+                  			"labelText": ""
+                		}
+					]
+					
+				},
+		       	{
+              		"block": "div",
+			  		"blockClass": "apri-view-list-item apri-view-field-parameter",
+               		"blocks": [
+                		{
+                  			"block": "formComponent",
+                  			"blockClass": "apri-view-field url-parameter-key",
+                  			"mode": "edit",
+                  			"type": "text",
+                  			"formClass": "yiv-required",
+                  			"formStyle": "position:absolute;left:40px;",
+                  			"fieldName": "viewFieldUrlParameterKey",
+                  			"placeholder": "API url parameter key",
+                  			"labelText": "Parameter:"
+                		},
+                		{
+                  			"block": "formComponent",
+                  			"blockClass": "apri-view-field url-parameter-value",
+                  			"mode": "edit",
+                  			"type": "text",
+                  			"formClass": "yiv-required",
+                  			"formStyle": "position:absolute;left:100px;",
+                  			"fieldName": "viewFieldUrlParameterValue",
+                  			"placeholder": "API url parameter value",
+                  			"labelText": ""
+                		}
+					]
+					
+				}
+				]
+			},		
+				{
+                  "block": "formComponent",
+                  "blockClass": "apri-view-button apri-refresh-icon16",
+                  "type": "button",
+                  "fieldName": "viewFieldRefreshButton"
+				},
+			   {
+              "block": "formComponent",
+              "blockClass": "apri-view-field result",
+              "mode": "edit",
+              "type": "textarea",
+              "formStyle": "",
+              "fieldName": "viewFieldResult",
+              "placeholder": "",
+              "labelText": "Result:"
+            }
+
+              ]
+           }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,525 @@
+{
+  "templates": [
+    {
+      "name": "template_aireas_stats",
+      "blocks": [
+        {
+          "block": "div",
+          "className": "",
+          "blocks": [
+            {
+              "block": "div",
+			  "blockClass": "apri-view-header",
+              "text": "AiREAS Statistics "
+            }
+          ]
+        },
+		
+        {
+          "block": "div",
+          "blockClass": "apri-form aireas-stats-filters",
+          "blocks": [
+		
+		
+                {
+                  "block": "formComponent",
+                  "mode": "edit",
+                  "type": "select",
+                  "fieldName": "avgPerYearMonthDaySelect",
+                  "labelText": "Averages per",
+                  "options": [
+                    {
+                      "keyValue": "Year",
+                      "description": "Year"
+                    },
+                    {
+                      "keyValue": "Month",
+                      "description": "Month"
+                    },
+                    {
+                      "keyValue": "Day",
+                      "description": "Day"
+                    }
+                  ]
+                },
+                {
+                  "block": "formComponent",
+                  "mode": "edit",
+                  "type": "select",
+                  "blockClass": "",
+                  "fieldName": "aireasAreaSelect",
+                  "labelText": "Area/City",
+                  "options": [
+                    {
+                      "keyValue": "all",
+                      "description": "All"
+                    },				  
+                    {
+                      "keyValue": "EHV",
+                      "description": "Eindhoven"
+                    },
+                    {
+                      "keyValue": "BREDA",
+                      "description": "Breda"
+                    },
+                    {
+                      "keyValue": "HELMOND",
+                      "description": "Helmond"
+                    },
+                    {
+                      "keyValue": "NBRA",
+                      "description": "Noord-Brabant"
+                    }
+                  ]
+                },
+                {
+                  "block": "formComponent",
+                  "mode": "edit",
+                  "type": "select",
+                  "blockClass": "",
+                  "fieldName": "airboxTDSelect",
+                  "labelText": "Airbox TD",
+                  "options": [
+                    {
+                      "keyValue": "Y",
+                      "description": "Total"
+                    },
+                    {
+                      "keyValue": "N",
+                      "description": "Detail"
+                    }
+                  ]
+                },
+                {
+                  "block": "formComponent",
+                  "mode": "edit",
+                  "type": "select",
+                  "blockClass": "not-selectable",
+                  "fieldName": "airboxSelect",
+                  "labelText": "Airbox",
+                  "options": [
+                    {
+                      "keyValue": "all",
+                      "description": "all"
+                    },
+                    {
+                      "keyValue": "1.cal",
+                      "description": "1.cal"
+                    },
+                    {
+                      "keyValue": "2.cal",
+                      "description": "2.cal"
+                    },
+                    {
+                      "keyValue": "3.cal",
+                      "description": "3.cal"
+                    },
+                    {
+                      "keyValue": "4.cal",
+                      "description": "4.cal"
+                    }
+                  ]
+                },
+                {
+                  "block": "formComponent",
+                  "mode": "edit",
+                  "type": "select",
+                  "blockClass": "",
+                  "fieldName": "sensorSelect",
+                  "labelText": "Sensor",
+                  "options": [
+                    {
+                      "keyValue": "OZON",
+                      "description": "Ozone"
+                    },
+                    {
+                      "keyValue": "PM1",
+                      "description": "PM1"
+                    },
+                    {
+                      "keyValue": "PM25",
+                      "description": "PM2.5"
+                    },
+                    {
+                      "keyValue": "PM10",
+                      "description": "PM10"
+                    },
+                    {
+                      "keyValue": "UFP",
+                      "description": "UFP"
+                    },
+                    {
+                      "keyValue": "NO2",
+                      "description": "NO2"
+                    }
+                  ]
+                },
+                {
+                  "block": "formComponent",
+                  "mode": "edit",
+                  "type": "select",
+                  "blockClass": "",
+                  "fieldName": "interpolateSelect",
+                  "labelText": "Interpolate",
+                  "options": [
+                    {
+                      "keyValue": "step-after",
+                      "description": "Step after"
+                    },
+                    {
+                      "keyValue": "step-before",
+                      "description": "Step before"
+                    },
+                    {
+                      "keyValue": "step",
+                      "description": "Step"
+                    },
+				    {
+                      "keyValue": "basis",
+                      "description": "Basis"
+                    },
+				    {
+                      "keyValue": "basis-open",
+                      "description": "Basis open"
+                    },
+				    {
+                      "keyValue": "basis-closed",
+                      "description": "Basis closed"
+                    },
+				    {
+                      "keyValue": "bundle",
+                      "description": "Bundle"
+                    },
+				    {
+                      "keyValue": "linear",
+                      "description": "Linear"
+                    },
+				    {
+                      "keyValue": "linear-closed",
+                      "description": "Linear closed"
+                    },
+				    {
+                      "keyValue": "cardinal",
+                      "description": "Cardinal"
+                    },
+				    {
+                      "keyValue": "cardinal-open",
+                      "description": "Cardinal open"
+                    },
+				    {
+                      "keyValue": "cardinal-closed",
+                      "description": "Cardinal closed"
+                    },
+				    {
+                      "keyValue": "monotone",
+                      "description": "Monotone"
+                    }
+		         ]
+                },
+                {
+                  "block": "formComponent",
+                  "mode": "edit",
+                  "type": "select",
+                  "blockClass": "",
+                  "fieldName": "histYearSelect",
+                  "labelText": "Year",
+                  "options": [
+                    {
+                      "keyValue": "all",
+                      "description": "All years"
+                    },
+                    {
+                      "keyValue": "2013",
+                      "description": "2013"
+                    },
+                    {
+                      "keyValue": "2014",
+                      "description": "2014"
+                    },
+                    {
+                      "keyValue": "2015",
+                      "description": "2015"
+                    }
+                  ]
+                },
+                {
+                  "block": "formComponent",
+                  "mode": "edit",
+                  "type": "select",
+                  "blockClass": "",
+                  "fieldName": "histYearFromSelect",
+                  "labelText": "From year",
+                  "options": [
+                    {
+                      "keyValue": "",
+                      "description": "..."
+                    },
+                    {
+                      "keyValue": "2014",
+                      "description": "2014"
+                    },
+                    {
+                      "keyValue": "2015",
+                      "description": "2015"
+                    }
+                  ]
+                },
+                {
+                  "block": "formComponent",
+                  "mode": "edit",
+                  "type": "select",
+                  "blockClass": "",
+                  "fieldName": "histYearToSelect",
+                  "labelText": "To year",
+                  "options": [
+                    {
+                      "keyValue": "",
+                      "description": "..."
+                    },
+                    {
+                      "keyValue": "2014",
+                      "description": "2014"
+                    },
+                    {
+                      "keyValue": "2015",
+                      "description": "2015"
+                    },
+                    {
+                      "keyValue": "2016",
+                      "description": "2016"
+                    }
+                  ]
+                },
+                {
+                  "block": "formComponent",
+                  "mode": "edit",
+                  "type": "select",
+                  "blockClass": "",
+                  "fieldName": "histMonthSelect",
+                  "labelText": "Month",
+                  "options": [
+                    {
+                      "keyValue": "all",
+                      "description": "All months"
+                    },
+                    {
+                      "keyValue": "1",
+                      "description": "1"
+                    },
+                    {
+                      "keyValue": "2",
+                      "description": "2"
+                    },
+                    {
+                      "keyValue": "3",
+                      "description": "3"
+                    },
+                    {
+                      "keyValue": "4",
+                      "description": "4"
+                    },
+                    {
+                      "keyValue": "5",
+                      "description": "5"
+                    },
+                    {
+                      "keyValue": "6",
+                      "description": "6"
+                    },
+                    {
+                      "keyValue": "7",
+                      "description": "7"
+                    },
+                    {
+                      "keyValue": "8",
+                      "description": "8"
+                    },
+                    {
+                      "keyValue": "9",
+                      "description": "9"
+                    },
+                    {
+                      "keyValue": "10",
+                      "description": "10"
+                    },
+                    {
+                      "keyValue": "11",
+                      "description": "11"
+                    },
+                    {
+                      "keyValue": "12",
+                      "description": "12"
+                    }
+                  ]
+                },
+				{
+                  "block": "formComponent",
+                  "mode": "edit",
+                  "type": "select",
+                  "blockClass": "",
+                  "fieldName": "histMonthFromSelect",
+                  "labelText": "From month",
+                  "options": [
+                    {
+                      "keyValue": "",
+                      "description": "..."
+                    },
+                    {
+                      "keyValue": "1",
+                      "description": "1"
+                    },
+                    {
+                      "keyValue": "2",
+                      "description": "2"
+                    },
+                    {
+                      "keyValue": "3",
+                      "description": "3"
+                    },
+                    {
+                      "keyValue": "4",
+                      "description": "4"
+                    },
+                    {
+                      "keyValue": "5",
+                      "description": "5"
+                    },
+                    {
+                      "keyValue": "6",
+                      "description": "6"
+                    },
+                    {
+                      "keyValue": "7",
+                      "description": "7"
+                    },
+                    {
+                      "keyValue": "8",
+                      "description": "8"
+                    },
+                    {
+                      "keyValue": "9",
+                      "description": "9"
+                    },
+                    {
+                      "keyValue": "10",
+                      "description": "10"
+                    },
+                    {
+                      "keyValue": "11",
+                      "description": "11"
+                    },
+                    {
+                      "keyValue": "12",
+                      "description": "12"
+                    }
+                  ]
+                },
+                {
+                  "block": "formComponent",
+                  "mode": "edit",
+                  "type": "select",
+                  "blockClass": "",
+                  "fieldName": "histMonthToSelect",
+                  "labelText": "To month",
+                  "options": [
+                    {
+                      "keyValue": "",
+                      "description": "..."
+                    },
+                    {
+                      "keyValue": "1",
+                      "description": "1"
+                    },
+                    {
+                      "keyValue": "2",
+                      "description": "2"
+                    },
+                    {
+                      "keyValue": "3",
+                      "description": "3"
+                    },
+                    {
+                      "keyValue": "4",
+                      "description": "4"
+                    },
+                    {
+                      "keyValue": "5",
+                      "description": "5"
+                    },
+                    {
+                      "keyValue": "6",
+                      "description": "6"
+                    },
+                    {
+                      "keyValue": "7",
+                      "description": "7"
+                    },
+                    {
+                      "keyValue": "8",
+                      "description": "8"
+                    },
+                    {
+                      "keyValue": "9",
+                      "description": "9"
+                    },
+                    {
+                      "keyValue": "10",
+                      "description": "10"
+                    },
+                    {
+                      "keyValue": "11",
+                      "description": "11"
+                    },
+                    {
+                      "keyValue": "12",
+                      "description": "12"
+                    }
+                  ]
+                },
+				{
+                  "block": "formComponent",
+                  "mode": "edit",
+                  "type": "button",
+                  "fieldName": "abortRetrieval",
+                  "labelText": "Cancel"
+                }
+			]
+		},		
+				
+				
+        {
+          "block": "div",
+          "blockClass": "apri-view-block",
+          "shortId": "apri-aireas-stats-container",
+          "blocks": [
+            {
+              "block": "div",
+			  "blockClass": "apri-view-header",
+              "shortId": "apri-aireas-stats-header",
+              "blocks": [
+                {
+                  "block": "div",
+                  "shortId": "apri-aireas-stats-header-title-container",
+                  "blocks": [
+                    {
+                      "block": "div",
+                      "shortId": "apri-aireas-stats-header-title",
+                      "text": "{{titleDescription}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "block": "div",
+			  "blockClass": "apri-view-body",
+              "shortId": "apri-aireas-stats-body",
+               "blocks": [
+              ]
+           }
+          ]
+        }
+      ]
+    }
+  ]
+}

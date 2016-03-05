@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head >
+<!-- <script src="../js/embedapi-master/pkg/ustream-embedapi.min.js"></script>  -->
+
+<script type="text/javascript" src="../client/apri-client-sys/lib/APRI/APRI.js"></script>
+<script type="text/javascript" src="../client/apri-client-sys/lib/APRI/APRI-controller.js"></script>
+<script type="text/javascript" src="../client/apri-client-sys/lib/APRI/APRI-kickstart.js"></script>
+
+
+<!--
+<script type="text/javascript" src="../apri-client-sys/build/APRI.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<style type="text/css">
+	#apri-startup-screen {
+		height:50px ;
+	}
+</style>
+-->
+
+</head>
+<body apri="apri-client-api-ui" apri-container="#apri-apps-body" apri-template="apri-air" unresolved >
+
+<div id="apri-startup-screen" class="init" style="visibility:hidden; display:none; color:white;" >
+	<div >Een moment aub, de applicatie wordt geladen.</div>
+</div>
+<div id="apri-apps-container" style="display:none; visibility:hidden;" >
+  <div id="apri-apps-body" style="display:inline-block;" >
+  <!--  <div id="apri-app-body" style="position:relative; ">
+    </div> -->
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4017230-8']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>

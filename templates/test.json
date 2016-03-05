@@ -1,0 +1,47 @@
+{
+  "templates": [
+    {
+      "name": "template_apri-air",
+      "blocks": [
+        {
+          "block": "div",
+          "className": "init",
+          "blocks": [
+            {
+              "block": "div",
+              "text": "hier moet de geduld aub tekst staan:{{oneMomentPlease}}"
+            }
+          ]
+        },
+        {
+          "block": "div",
+          "className": "init",
+          "shortId": "apri-apps-container",
+          "blocks": [
+            {
+              "block": "div",
+              "shortId": "apri-apps-header",
+              "blocks": [
+                {
+                  "block": "div",
+                  "shortId": "apri-apps-header-title-container",
+                  "blocks": [
+                    {
+                      "block": "div",
+                      "shortId": "apri-apps-header-title",
+                      "text": "hier moet de titel tekst staan:{{titleDescription}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "block": "div",
+              "shortId": "apri-apps-body"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
