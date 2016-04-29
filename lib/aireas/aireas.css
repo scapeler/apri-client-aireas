@@ -12,12 +12,12 @@ body {
 	#border: 5px solid #fff;
 	#border-radius: 12px;
 	#box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
-	margin: 4px;
+	padding: 10px;
 	margin-left: 61px;
 	#float:left;
 	position:relative;
 	#z-index: 1;
-	height:85px;
+	#height:85px;
 }
 div.top-logo-container {
 	-moz-force-broken-image-icon: 1;
