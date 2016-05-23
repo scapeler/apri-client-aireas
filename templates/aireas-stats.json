@@ -1,6 +1,7 @@
 {
   "templates": [
     {
+      "block": "template",
       "name": "template_aireas_stats",
       "blocks": [
         {
@@ -490,20 +491,20 @@
         {
           "block": "div",
           "blockClass": "apri-view-block",
-          "shortId": "apri-aireas-stats-container",
+          "id": "apri-aireas-stats-container",
           "blocks": [
             {
               "block": "div",
 			  "blockClass": "apri-view-header",
-              "shortId": "apri-aireas-stats-header",
+              "id": "apri-aireas-stats-header",
               "blocks": [
                 {
                   "block": "div",
-                  "shortId": "apri-aireas-stats-header-title-container",
+                  "id": "apri-aireas-stats-header-title-container",
                   "blocks": [
                     {
                       "block": "div",
-                      "shortId": "apri-aireas-stats-header-title",
+                      "id": "apri-aireas-stats-header-title",
                       "text": "{{titleDescription}}"
                     }
                   ]
@@ -513,7 +514,7 @@
             {
               "block": "div",
 			  "blockClass": "apri-view-body",
-              "shortId": "apri-aireas-stats-body",
+              "id": "apri-aireas-stats-body",
                "blocks": [
               ]
            }

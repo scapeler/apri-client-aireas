@@ -1,7 +1,8 @@
 {
   "templates": [
     {
-      "name": "template_api-ui",
+      "block": "template",
+	  "name": "template_api-ui",
       "blocks": [
         {
           "block": "div",
@@ -17,20 +18,20 @@
         {
           "block": "div",
           "blockClass": "apri-view-block",
-          "shortId": "apri-api-container",
+          "id": "apri-api-container",
           "blocks": [
             {
               "block": "div",
 			  "blockClass": "apri-view-header",
-              "shortId": "apri-api-header",
+              "id": "apri-api-header",
               "blocks": [
                 {
                   "block": "div",
-                  "shortId": "apri-api-header-title-container",
+                  "id": "apri-api-header-title-container",
                   "blocks": [
                     {
                       "block": "div",
-                      "shortId": "apri-api-header-title",
+                      "id": "apri-api-header-title",
                       "text": "{{titleDescription}}"
                     }
                   ]
@@ -40,7 +41,7 @@
             {
               "block": "div",
 			  "blockClass": "apri-view-body",
-              "shortId": "apri-api-body",
+              "id": "apri-api-body",
                "blocks": [
                 {
                   "block": "formComponent",
